@@ -1,0 +1,102 @@
+/* assets/css/style.css */
+
+/* Estilos globales */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1f1f2e; /* Color primario para el fondo */
+}
+
+/* Contenedor principal */
+.container {
+  background-color: #2a2a3a; /* Fondo más oscuro para el contenedor */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más fuerte en modo oscuro */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  color: #00c1d4; /* Color secundario para el título */
+  margin-bottom: 20px;
+}
+
+/* Botón de grabación */
+button#record {
+  background-color: #00c1d4; /* Color secundario para el botón */
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  font-size: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button#record:hover {
+  background-color: #00a6b7; /* Color secundario oscuro al pasar el cursor */
+}
+
+/* Lista de tareas */
+.tasks {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+/* Estilo de cada tarea */
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.task:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+
+/* Checkbox */
+.task input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #00c1d4; /* Color del checkbox en modo oscuro */
+}
+
+/* Texto de la tarea */
+span {
+  flex-grow: 1;
+  text-align: left;
+  color: #e0e0e0; /* Texto claro en modo oscuro */
+}
+
+/* Botón de eliminar */
+.task button.delete-task {
+  background-color: transparent;
+  border: none;
+  color: #ff5252; /* Color de eliminar */
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.task button.delete-task:hover {
+  color: #e04848; /* Color más oscuro al pasar el cursor */
+}
+
+.task-done {
+  color: green;
+}
