@@ -1,0 +1,22 @@
+{
+  "name": "backend-encrypt-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch index.js"
+  },
+  "keywords": [
+    "backend",
+    "api",
+    "express",
+    "cors"
+  ],
+  "author": "gabrielalberini",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.21.0"
+  }
+}
