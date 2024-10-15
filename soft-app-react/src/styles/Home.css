@@ -1,0 +1,63 @@
+/* src/styles/Home.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5em; /* Tamaño del encabezado */
+  color: #333; /* Color del encabezado */
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre las tarjetas */
+  margin-top: 20px;
+}
+
+.contact-section {
+  margin-top: 40px; /* Espacio superior */
+  background-color: #f2f2f2; /* Fondo del formulario */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.contact-form h2 {
+  margin: 0 0 15px 0; /* Margen inferior */
+}
+
+.contact-form textarea {
+  height: 100px; /* Altura fija */
+  border-radius: 4px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris */
+  padding: 10px; /* Espaciado interno */
+  resize: none; /* Deshabilitar el redimensionamiento */
+}
+
+.contact-form button {
+  margin-top: 10px; /* Espacio superior */
+  background-color: #4caf50; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor */
+  transition: background-color 0.3s; /* Animación de color */
+}
+
+.contact-form button:hover {
+  background-color: #45a049; /* Color al pasar el mouse */
+}
